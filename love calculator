@@ -1,0 +1,23 @@
+name1=input("mention her name?")
+name2=input("mention his name?")
+combine_string=name1+name2
+lowercase_string=combine_string.lower()
+t=lowercase_string.count('t')
+r=lowercase_string.count('r')
+u=lowercase_string.count('u')
+e=lowercase_string.count('e')
+true=t+r+u+e
+l=lowercase_string.count('l')
+o=lowercase_string.count('o')
+v=lowercase_string.count('v')
+e=lowercase_string.count('e')
+love=l+o+v+e
+love_score=int(str(true)+str(love))
+if love_score < 10 or love_score > 95:
+                                      print(f"your score is {love_score} and your bonding is like a fish and fisherman")
+elif love_score >9 and love_score <50:
+    print(f"your score is {love_score} and your bonding is lovely bonding")
+elif love_score >=60 and love_score<=80:
+    print(f"your score is {love_score} and your bonding is a truely caring bond")
+else:
+    print(f"your love score is{love_score}")

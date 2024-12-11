@@ -1,0 +1,25 @@
+print("Exhibition's ticket counter Area.")
+print("collect your valuable tickets near the counter!")
+height=int(input("what is your height in feets?"))
+bill=0
+if height>=3:
+    print("you can ride")
+    age=int(input("what is your age?"))
+    if age<12:
+       print("pay 150rs for ur ticket")
+       bill=150
+    elif age<=18:
+       print("pay 250rs for ur ticket")
+       bill=250
+    else:
+       print("pay 500rs for ur ticket")
+       bill=500
+
+
+    want_photo=input("do you want your photo Y/N:")
+    if want_photo=='y' or want_photo=="Y":
+        bill=bill+50
+        print(f"your total bill is {bill}")
+
+else:
+      print("can't ride")
